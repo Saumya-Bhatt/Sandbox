@@ -21,6 +21,7 @@
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
 
   </head>
 
@@ -165,19 +166,22 @@
                 <h2 class="footer-heading mb-4" style="font-weight:bold; font-size: 1.7em;">Reach Out</h2>
                 <ul class="list-unstyled">
                   <li><a href="#">0123456789</a></li>
-                  <li><a href="#">emailaddress@gmail.com</a></li>
+                  <li><a href="#">sandbox.bpgc@gmail.com</a></li>
                   <li><a href="#">facebook</a></li>
                   <li><a href="#">LinkedIn</a></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <h2 class="footer-heading mb-4" style="font-weight:bold; font-size: 1.7em;">Contact Us</h2>
-                <form action="#" class="d-flex" class="subscribe">
+                <?php if(!empty($statusMsg)){ ?>
+                  <p class="statusMsg <?php echo !empty($msgClass)?$msgClass:''; ?>"><?php echo $statusMsg; ?></p>
+              <?php } ?>
+                <form action="php/faq.php" method="POST" class="d-flex" class="subscribe">
                   <div>
-                    <input style="margin: 5px;" type="text" class="form-control mr-4" placeholder="Name">
-                    <input style="margin: 5px;" type="text" class="form-control mr-4" placeholder="Email">
-                    <textarea style="margin: 5px;" type="text" class="form-control mr-3" placeholder="Message"></textarea>
-                    <input style="margin: 5px;" type="submit" value="Send" class="btn btn-primary">
+                    <input style="margin: 5px;" name="name" type="text" class="form-control mr-4" placeholder="Name" required>
+                    <input style="margin: 5px;" name="email" type="text" class="form-control mr-4" placeholder="Email" required>
+                    <textarea style="margin: 5px;" name="message" type="text" class="form-control mr-3" placeholder="Message" required></textarea>
+                    <input style="margin: 5px;" type="submit" value="submit" name="submit" class="btn btn-primary">
                   </div>
                 </form>
               </div>

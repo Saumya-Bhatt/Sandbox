@@ -23,6 +23,7 @@
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/members.css">
+    <link rel="stylesheet" href="css/style2.css">
 
   </head>
 
@@ -95,24 +96,31 @@
       </div>
     </div>
 
-    
+    <!--STUDENT-->
     <div class="member_heading">
       <word class="heading">Student Members</word>
     </div>
 
     <div class="site-section" style="margin-top: 0px;">
 
-      <div class="dropdown" style="margin: 0px 40% 55px 40%">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Current Members
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Previous Members</a>
-        </div>
+      <div class="togglebar">
+          <select style="background-color: #ebaa4a;
+          padding: 10px; 
+          color: white; 
+          text-transform: uppercase;
+          border-radius: 5px 10px;
+          word-spacing: 3px;
+          border: none;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-size: 0.95em;" id="member-selector">
+            <option value="current">Current Members</option>
+            <option value="previous">Previous Members</option>
+          </select>
       </div>
 
       <div class="container">
-        <div class="team_box">
+
+        <div class="team_box test" memeber-data="current">
 
           <div class="card" style="width: 18rem;">
             <img class="card-img-top member" src="images/Abhimanyu.JPG" alt="Card image cap">
@@ -124,7 +132,7 @@
                 <a href=""><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
               </div>
             </div>
-          </div>
+          </div><!--LINKEDIN LEFT-->
           <div class="card" style="width: 18rem;">
             <img class="card-img-top member" src="images/mihir.min.png" alt="Card image cap">
             <div class="card-body">
@@ -249,6 +257,45 @@
 
 
         </div>
+
+        <div class="team_box test"  memeber-data="previous">
+
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top member" src="images/shubham.min.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <name class="card-text name">Shubham</name>
+              <div>
+                <a href="tel:+917588328282"><i class="fa fa-phone-square fa-2x" aria-hidden="true"></i></a>
+                <a href="mailto:shubs.c.13@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/shubham-chavan-a58100142"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top member" src="images/apurv.min.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <name class="card-text name">Apurva</name>
+              <div>
+                <a href="tel:+919834716370"><i class="fa fa-phone-square fa-2x" aria-hidden="true"></i></a>
+                <a href="mailto:apurv.hajare@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/apurvhajare/"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top member" src="images/nirvaan.min.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <name class="card-text name">Nirvaan</name>
+              <div>
+                <a href="tel:+919702863928"><i class="fa fa-phone-square fa-2x" aria-hidden="true"></i></a>
+                <a href="mailto:anjirbagnirvan101@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/nirvan-anjirbag-22b98212b?originalSubdomain=in"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
       </div>
 
     </div>
@@ -258,147 +305,134 @@
       <word class="heading">Faculty Members</word>
     </div>
   
-      <div class="site-section" style="margin-top: 0px;">
-  
-  
-        <div class="container">
-          <div class="team_box">
-  
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top member" src="images/pravin.min.png" alt="Card image cap">
-              <div class="card-body">
-                <name class="card-text name">Dr. Pravin Mane</name>
-                <div>
-                  <a href="http://universe.bits-pilani.ac.in/goa/pravinmane/profile"><i class="fa fa-id-card fa-2x" aria-hidden="true"></i></a>
-                </div>
+    <div class="site-section" style="margin-top: 0px;">
+
+
+      <div class="container">
+        <div class="team_box">
+
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top member" src="images/pravin.min.png" alt="Card image cap">
+            <div class="card-body">
+              <name class="card-text name">Dr. Pravin Mane</name>
+              <div>
+                <a href="http://universe.bits-pilani.ac.in/goa/pravinmane/profile"><i class="fa fa-id-card fa-2x" aria-hidden="true"></i></a>
               </div>
             </div>
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top member" src="images/indrani.min.png" alt="Card image cap">
-              <div class="card-body">
-                <name class="card-text name">Dr. Indrani Talukdar</name>
-                <div>
-                  <a href="http://universe.bits-pilani.ac.in/goa/indranit/profile"><i class="fa fa-id-card fa-2x" aria-hidden="true"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top member" src="images/rahul.min.png" alt="Card image cap">
-              <div class="card-body">
-                <name class="card-text name">Dr. Rahul Thakur</name>
-                <div>
-                  <a href="http://www.bits-pilani.ac.in/goa/rahult/profile"><i class="fa fa-id-card fa-2x" aria-hidden="true"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top member" src="images/ramprasad.min.png" alt="Card image cap">
-              <div class="card-body">
-                <name class="card-text name">Dr. Ramprasad S Joshi</name>
-                <div>
-                  <a href="http://www.bits-pilani.ac.in/goa/rsj/profile"><i class="fa fa-id-card fa-2x" aria-hidden="true"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top member" src="images/hrishi.min.png" alt="Card image cap">
-              <div class="card-body">
-                <name class="card-text name">Dr. Hrishikesh Sonalikar</name>
-                <div>
-                  <a href="http://universe.bits-pilani.ac.in/goa/Hrishikeshs/profile"><i class="fa fa-id-card fa-2x" aria-hidden="true"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top member" src="images/rnbehera.min.png" alt="Card image cap">
-              <div class="card-body">
-                <name class="card-text name">Dr. R N Behera</name><br><br>
-                <div>
-                  <a href="http://universe.bits-pilani.ac.in/goa/rbehera/profile"><i class="fa fa-id-card fa-2x" aria-hidden="true"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top member" src="images/gkarthikeyan.min.png" alt="Card image cap">
-              <div class="card-body">
-                <name class="card-text name">Dr. G Karthikeyan</name>
-                <div>
-                  <a href="http://universe.bits-pilani.ac.in/goa/gkarthi/profile"><i class="fa fa-id-card fa-2x" aria-hidden="true"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top member" src="images/siddharth.min.png" alt="Card image cap">
-              <div class="card-body">
-                <name class="card-text name">Dr. Siddharth Tripathi</name>
-                <div>
-                  <a href="http://universe.bits-pilani.ac.in/goa/siddharthat/profile"><i class="fa fa-id-card fa-2x" aria-hidden="true"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top member" src="images/eskannan.min.png" alt="Card image cap">
-              <div class="card-body">
-                <name class="card-text name">Dr. E S Kannan</name>
-                <div>
-                  <a href="http://universe.bits-pilani.ac.in/goa/eskannan/profile"><i class="fa fa-id-card fa-2x" aria-hidden="true"></i></a>
-                </div>
-              </div>
-            </div>
-  
-  
           </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top member" src="images/indrani.min.png" alt="Card image cap">
+            <div class="card-body">
+              <name class="card-text name">Dr. Indrani Talukdar</name>
+              <div>
+                <a href="http://universe.bits-pilani.ac.in/goa/indranit/profile"><i class="fa fa-id-card fa-2x" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top member" src="images/rahul.min.png" alt="Card image cap">
+            <div class="card-body">
+              <name class="card-text name">Dr. Rahul Thakur</name>
+              <div>
+                <a href="http://www.bits-pilani.ac.in/goa/rahult/profile"><i class="fa fa-id-card fa-2x" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top member" src="images/ramprasad.min.png" alt="Card image cap">
+            <div class="card-body">
+              <name class="card-text name">Dr. Ramprasad S Joshi</name>
+              <div>
+                <a href="http://www.bits-pilani.ac.in/goa/rsj/profile"><i class="fa fa-id-card fa-2x" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top member" src="images/hrishi.min.png" alt="Card image cap">
+            <div class="card-body">
+              <name class="card-text name">Dr. Hrishikesh Sonalikar</name>
+              <div>
+                <a href="http://universe.bits-pilani.ac.in/goa/Hrishikeshs/profile"><i class="fa fa-id-card fa-2x" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top member" src="images/rnbehera.min.png" alt="Card image cap">
+            <div class="card-body">
+              <name class="card-text name">Dr. R N Behera</name><br><br>
+              <div>
+                <a href="http://universe.bits-pilani.ac.in/goa/rbehera/profile"><i class="fa fa-id-card fa-2x" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top member" src="images/gkarthikeyan.min.png" alt="Card image cap">
+            <div class="card-body">
+              <name class="card-text name">Dr. G Karthikeyan</name>
+              <div>
+                <a href="http://universe.bits-pilani.ac.in/goa/gkarthi/profile"><i class="fa fa-id-card fa-2x" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top member" src="images/siddharth.min.png" alt="Card image cap">
+            <div class="card-body">
+              <name class="card-text name">Dr. Siddharth Tripathi</name>
+              <div>
+                <a href="http://universe.bits-pilani.ac.in/goa/siddharthat/profile"><i class="fa fa-id-card fa-2x" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top member" src="images/eskannan.min.png" alt="Card image cap">
+            <div class="card-body">
+              <name class="card-text name">Dr. E S Kannan</name>
+              <div>
+                <a href="http://universe.bits-pilani.ac.in/goa/eskannan/profile"><i class="fa fa-id-card fa-2x" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+
+
         </div>
-  
       </div>
 
+    </div>
 
-    
 
+    <!--Footer-->
     <footer class="site-footer bg-light">
       <div class="container">
         <div class="row">
           <div class="col-lg-3">
-            <h2 class="footer-heading mb-3">Instagram</h2>
-            <div class="row">
-              <div class="col-4 gal_col">
-                <a href="#"><img src="images/insta_1.jpg" alt="Image" class="img-fluid"></a>
-              </div>
-              <div class="col-4 gal_col">
-                <a href="#"><img src="images/insta_2.jpg" alt="Image" class="img-fluid"></a>
-              </div>
-              <div class="col-4 gal_col">
-                <a href="#"><img src="images/insta_3.jpg" alt="Image" class="img-fluid"></a>
-              </div>
-              <div class="col-4 gal_col">
-                <a href="#"><img src="images/insta_4.jpg" alt="Image" class="img-fluid"></a>
-              </div>
-              <div class="col-4 gal_col">
-                <a href="#"><img src="images/insta_5.jpg" alt="Image" class="img-fluid"></a>
-              </div>
-              <div class="col-4 gal_col">
-                <a href="#"><img src="images/insta_6.jpg" alt="Image" class="img-fluid"></a>
-              </div>
-            </div>
+            <h2 class="footer-heading mb-3" style="font-weight:bold; font-size: 1.7em;">Address</h2>
+            <p>Behind LT-1/2 Lawns, BITS-Pilani, K.K. Birla Goa Campus,</p>
+            <p>Near NH-17 Bypass road, Zuarinagar</p>
+            <p>Goa, 403726</p>
           </div>
           <div class="col-lg-8 ml-auto">
             <div class="row">
               <div class="col-lg-6 ml-auto">
-                <h2 class="footer-heading mb-4">Quick Links</h2>
+                <h2 class="footer-heading mb-4" style="font-weight:bold; font-size: 1.7em;">Reach Out</h2>
                 <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Terms of Service</a></li>
-                  <li><a href="#">Privacy</a></li>
-                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">0123456789</a></li>
+                  <li><a href="#">sandbox.bpgc@gmail.com</a></li>
+                  <li><a href="#">facebook</a></li>
+                  <li><a href="#">LinkedIn</a></li>
                 </ul>
               </div>
               <div class="col-lg-6">
-                <h2 class="footer-heading mb-4">Newsletter</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt odio iure animi ullam quam, deleniti rem!</p>
-                <form action="#" class="d-flex" class="subscribe">
-                  <input type="text" class="form-control mr-3" placeholder="Email">
-                  <input type="submit" value="Send" class="btn btn-primary">
+                <h2 class="footer-heading mb-4" style="font-weight:bold; font-size: 1.7em;">Contact Us</h2>
+                <?php if(!empty($statusMsg)){ ?>
+                  <p class="statusMsg <?php echo !empty($msgClass)?$msgClass:''; ?>"><?php echo $statusMsg; ?></p>
+              <?php } ?>
+                <form action="php/members.php" method="POST" class="d-flex" class="subscribe">
+                  <div>
+                    <input style="margin: 5px;" name="name" type="text" class="form-control mr-4" placeholder="Name" required>
+                    <input style="margin: 5px;" name="email" type="text" class="form-control mr-4" placeholder="Email" required>
+                    <textarea style="margin: 5px;" name="message" type="text" class="form-control mr-3" placeholder="Message" required></textarea>
+                    <input style="margin: 5px;" type="submit" value="submit" name="submit" class="btn btn-primary">
+                  </div>
                 </form>
               </div>
               
@@ -409,19 +443,19 @@
           <div class="col-md-12">
             <div class="border-top pt-5">
               <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Designed and developed by <a href="https://www.linkedin.com/in/saumya-bhatt-2000/" target="_blank" >Saumya Bhatt</a>
             </p>
             </div>
           </div>
 
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>    
+
 
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery-migrate-3.0.0.js"></script>
     <script src="js/popper.min.js"></script>
@@ -438,6 +472,19 @@
     <script src="js/aos.js"></script>
 
     <script src="js/main.js"></script>
+
+    <script>
+      $('.test').hide();
+      $('[member-data=' + $('select').val() + ']').show();
+
+      $('select').on('change', function() {
+
+        var value = $(this).val();
+        $('.test').hide();
+        $('[memeber-data=' + value + ']').show();
+
+      });
+    </script>
 
   </body>
 
