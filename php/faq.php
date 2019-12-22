@@ -10,14 +10,14 @@ if(isset($_POST['submit'])){
     $message = $_POST['message'];
     
     // Check whether submitted data is not empty
-    if(!empty($email) && !empty($name) && !empty($subject) && !empty($message)){
+    if(!empty($email) && !empty($name) && !empty($message)){
         
         if(filter_var($email, FILTER_VALIDATE_EMAIL) === false){
             $statusMsg = 'Please enter your valid email.';
             $msgClass = 'errordiv';
         }else{
             // Recipient email
-            $toEmail = 'sandbox.bpgc@gmail.com';
+            $toEmail = 'saumi10600@gmail.com';
             $emailSubject = 'Contact Request Submitted from Sandbox website by '.$name;
             $htmlContent = '<h2>Contact Request Submitted</h2>
                 <h4>Name</h4><p>'.$name.'</p>

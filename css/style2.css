@@ -1,0 +1,33 @@
+
+.heading {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 5em;
+}
+.img-fluid {
+    height: 18em;
+    width: 25em;
+    border-radius: 2px;
+}
+p.statusMsg{font-size:18px;}
+p.succdiv{color: #008000;}
+p.errordiv{color:#E80000;}
+
+.member_button {
+    background-color: #ebaa4a;
+    padding: 10px; 
+    color: white; 
+    text-transform: uppercase;
+    border-radius: 5px 10px;
+    word-spacing: 3px;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.95em;
+    margin: 30px;
+}
+.togglebar {
+    display: flex;
+}
+.togglebar > button {
+    margin: 0px 30px 0px 30px;
+}
+
