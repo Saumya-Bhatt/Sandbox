@@ -35,6 +35,7 @@ if(isset($_POST['submit'])){
             if(mail($toEmail,$emailSubject,$htmlContent,$headers)){
                 $statusMsg = 'Your contact request has been submitted successfully !';
                 $msgClass = 'succdiv';
+                header('location:../collaboration.html');
             }else{
                 $statusMsg = 'Your contact request submission failed, please try again.';
                 $msgClass = 'errordiv';

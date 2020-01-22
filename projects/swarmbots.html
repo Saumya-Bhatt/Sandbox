@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title>Sandbox | Swarmbots</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="../css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="../css/aos.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style2.css">
+
+  </head>
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    
+    <div class="site-wrap" id="home-section">
+
+      <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+
+
+
+      <header class="site-navbar site-navbar-target" role="banner">
+
+        <div class="container">
+          <div class="row align-items-center position-relative">
+
+            <div class="col-3 ">
+              <div class="site-logo">
+                <a href="../index.html" class="font-weight-bold" style="display: flex;">
+                  <img src="../images/SandboxLogo.min.jpg" style="height: 3em; width: auto;" alt="Image" class="img-fluid">
+                  <p style="margin: auto;">SANDBOX</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-9  text-right">
+              
+
+              <span class="d-inline-block d-lg-none"><a href="#" class="text-white site-menu-toggle js-menu-toggle py-5 text-white"><span class="icon-menu h3 text-white"></span></a></span>
+
+              
+
+              <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
+                <ul class="site-menu main-menu js-clone-nav ml-auto ">
+                  <li style="float: right;" class="active"><a href="../projects.html" class="nav-link">Back to projects</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            
+          </div>
+        </div>
+
+      </header>
+
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+
+          <h1 style="text-align: center;">Swarmbots</h1>
+          <br><br>
+          <br><br>
+
+          <div class="container">
+
+
+            <h3>Summary</h3>
+            <p>The aim of the project is to create a sensor network which will assist in gathering data over large areas. We plan on testing it for analyzing pollution levels in Goa. This network can also be modified to measure moisture and soil health levels in fields to optimize the irrigation and pesticide distribution system.
+			</p>
+            <p>The sensor data will be collected by a swarm of Quadcopters which will be deployed whenever the data is to retrieved.
+			</p>
+            <p>The project will be having two parts. One is the Quadcopter swarming and second is developing the sensor modules.
+			</p>
+			<p>Swarm robotics is an approach to the coordination of multirobot systems which consist of large numbers of mostly simple physical robots. Once we have successfully implemented a swarming of the above bots, we can create a network of sensor nodes mounted on top of the robots,and use it to efficiently monitor the data of the area. We achieve swarming to divide workload between multiple bots and to make them communicate with each other, resulting in smarter behaviour of the overall system. Each of the sensor modules will have the sensors necessary for the application installed on it. These modules will be installed at different locations in the area to be monitored. These modules will be continuously collecting the required data. Whenever the data needs to be collected the drones will go to the area over which data is collected. The drones will travel over the area in a swarm receiving the data collected by the sensor nodes.
+			</p>
+            <br>
+
+            <h3>Novelty of proposal</h3>
+            <p>The proposal leads to the production of a prototype which isn’t available till date and hasn’t been explored or implemented, according to our knowledge. We plan to create a much faster, easier and highly reliable system for data collection in various applications.
+			</p>
+            <p>By sending a swarm of drones into the field more area can be covered in less time. As the drones can go to places where humans can not reach data can collected from such remote places also. The sensor nodes can be very cheap and can be mass manufactured as they only need to gather the data and send it over a very short range, that is the drone above it. This will increase the battery life of the modules and they can be expendable. From the viewpoint of Sandbox, under careful observation of the resources already present with us, we found that we have a libelium kit, priced at INR 5,76,000, which has all the components we need and which we will make use of. These have the nodes (moats) which we’ll be using, they have xbee modules which will be extensively used for communication between the robots and sensors gathering data.
+			</p>
+            <br>
+
+            <h3>Technical Prerequisites</h3>
+            <p>For this project,knowledge of the following skills is required :-
+			</p>
+            <p><ul>
+				<li>Mechanism and Product Designing using CAD/CAM softwares
+				</li>
+				<li>Wireless communication using Xbee modules.
+				</li>
+				<li>Programming and simulating robots using ROS
+				</li>
+				<li>Programming of Raspberry Pi and Teensy 3.6 boards.
+				</li>
+				<li>PCB designing using Eagle
+				</li>
+			</ul></p>
+            <br>
+
+            <h3>Methodology of Execution</h3>
+            <p>Instead of directly developing algorithms on the multirotors, the algorithms will be developed on ground based rovers so as to prevent losses due to crashes. The rovers will have a Raspberry Pi on each of them for running ROS, and will cheaply simulate the effect of multirotors. Simultaneously, the communication equipment from the Libelium IOT Kit will be tested and set up for efficient data transfer when the drone is in range of the mote.
+			</p>
+            <p>Algorithms and programs will then be written to control the path planning of the swarm of multi rotors optimising for the distance travelled and the time taken for data retrieval. All stages will be heavily utilising ROS - Robotics Operating System. All available communication mechanisms in ROS will be tested and the design will be further improved upon. Our current design is as follows using rovers:
+			</p>
+			<p>After implementation of the swarm of multirotors, the sensor nodes and communication equipment will be introduced into the system. Further work will be on providing updates remotely to the nodes and improvements in design of the motes for longer life of batteries.
+			</p>
+            <br>
+
+            <h3>Timeline of product development
+			</h3><br>
+            <p><h4>Phase 1:
+			</h4>September 2017 - February 2018 <br>Centralised Swarm of Multirotors to create formations and retrieval of live feed from nodes
+			</p>
+			<p><h4>Phase 2:
+			</h4>February 2018 - April 2018
+			<br>Decentralised Swarm of Multirotors to create formations and retrieval of any kind of data in stipulated bandwidth
+			</p>
+			<p><h4>Phase 3:
+			</h4>May 2018
+			<br>Implementation with WSN and swarm of multiple multirotors to collect data
+			</p>
+			<br>
+			
+			<h3>Background work completed</h3>
+			<p>Preliminary research on swarm robotics pertaining to efficient division of work among the various drones in a swarm has been done. We have scrutinized the various sensors available to us in the Libelium IOT kit and we are examining which sensors to include on the nodes so as to create a powerful yet cost effective network of information gathering motes. Research on the XBee wireless modules and their implementation is being conducted. Drone robots have been designed and the various components required on them such as Rasberry Pi s and PixHawk flight controllers have been decided. Basic ROS and Rasberry Pi programming has been learnt to interface and control the required hardware and peripherals.
+			</p><br>
+
+			<h3>Impact and Utility of the product</h3>
+			<p>The advantage of interfacing with a quadcopter is that these sensors will be able to last for a much longer time as compared to a conventional sensor which is continuously transmitting as this sensor will transmit only when necessary..This property can be very useful if these nodes are deployed at remote locations where replacing or charging these nodes is a costly operation and hence this product can find further utility there.
+			</p><br>
+
+			<h3>Existing Products and Comparison of our product</h3>
+			<p>There are existing Wireless Sensor Networks which use a 3-D network to monitor a particular area. There are a lot of products like FireWxNet which monitor forest fires using 3-D network. But our network has a mobile Base station as compared to a stationary Base station which is present in all the existing networks. A mobile base station enables us to save a lot of power which would otherwise be wasted in transmission . Thus we are able to keep the network live longer than traditional networks as the battery of the motes last longer. The only power constraint is that of the base station and we can recharge that very easily to ensure that the network is live. We can easily replace malfunctioning or dead motes with a mobile base station. We would be able to replace the mote at its existing position,thus saving us the time which would be wasted in calculating efficient routes for transmission of the new mote.
+			</p>
+
+            <h3>Equipments Required from Sandbox</h3>
+            <p>We have already purchased the rover kits and are working with them. We plan on spending money from our own pocket to purchase the rest of the components. We will also be participating in competitions to raise the required amount for the hardware required.
+			</p>
+            <p><ul>
+				<li>Raspberry Pi
+				</li>
+				<li>Arduino
+				</li>
+				<li>Rover 5 Kit
+				</li>
+				<li>3D Printer
+				</li>
+				<li>Multi channel Power Supply
+				</li>
+				<li>Kinect
+				</li>
+				<li>Multimeter
+				</li>
+				<li>Libellium IOT Vertical Kit consisting of :
+				</li>
+				<li>Meshlium 4G 802.15.4 AP
+				</li>
+				<li>Plug & Sense! SCP 802.15.4-PRO 5dBi
+				</li>
+				<li>Plug & Sense! SE-PRO 802.15.4-PRO 5 dBi Europe version
+				</li>
+				<li>Noise / Sound Level Sensor
+				</li>
+				<li>Luminosity (luxes accuracy)
+				</li>
+				<li>Temperature, Humidity and Pressure Sensor Probe
+				</li>
+				<li>Calibrated Carbon Monoxide (CO) gas Sensor Probe
+				</li>
+				<li>Calibrated Nitric Dioxide (NO2) gas Sensor (High Accuracy) Probe
+				</li>
+				<li>Calibrated Ozone (O3) gas Sensor Probe
+				</li>
+				<li>Outdoors USB cable
+				</li>
+				<li>International adapter
+				</li>
+				<li>6600mAh rechargeable battery + external solar panel
+				</li>
+			</ul></p>
+			<p>Equipment Required that are not in Sandbox :
+			</p>
+			<p><ul>
+				<li>Drones x9
+				</li>
+				<li>Rover Kits x7
+				</li>
+			</ul></p>
+            <br>
+
+			<h2>Team Members</h2>
+            <table style="width:60%;">
+                <tr>
+                    <th style="text-align:left;">Name</th>
+                    <th style="text-align:left;">ID</th>
+          
+                </tr>
+                <tr>
+                  <td>Nikhil Khedekar	</td>
+                  <td>2015A7PS0075G
+				</td>
+                </tr>
+                <tr>
+                  <td>Shubham Kumar	</td>
+                  <td>2015A3PS0158G
+				</td>
+                </tr>
+              <tr>
+                  <td>Mihir Dharmadhikari	</td>
+                  <td>2016A8PS0616G
+				</td>
+                </tr>
+                <tr>
+                  <td>Mihir Kulkarni	</td>
+                  <td>2016A4PS0150G
+				</td>
+				</tr>
+				<tr>
+					<td>Adithya Narayanan	</td>
+					<td>2015A3PS0224G
+				  </td>
+				  </tr>
+              </table>
+          
+
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <!--Footer-->
+    <footer class="site-footer bg-light">
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <div class="border-top pt-5">
+              <p>
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Designed and developed by <a href="https://www.linkedin.com/in/saumya-bhatt-2000/" target="_blank" >Saumya Bhatt</a>
+            </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/aos.js"></script>
+
+    <script src="js/main.js"></script>
+
+  </body>
+
+</html>
