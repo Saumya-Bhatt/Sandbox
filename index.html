@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
@@ -68,12 +70,13 @@
 
               <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav ml-auto ">
-                  <li class="active"><a href="index.html#home" class="nav-link">Home</a></li>
-                  <li><a href="index.html#about" class="nav-link">About</a></li>
+                  <li><a href="index.html#home" class="nav-link">Home</a></li>
                   <li><a href="projects.html" class="nav-link">Projects</a></li>
                   <li><a href="members.html" class="nav-link">Members</a></li>
-                  <li><a href="collaboration.html" class="nav-link">Collaborations</a></li>
+                  <li class="active"><a href="collaboration.html" class="nav-link">Collaborations</a></li>
+                  <li><a href="proposal.html" class="nav-link">Proposals</a></li>
                   <li><a href="faq.html" class="nav-link">FAQs</a></li>
+                  <li><a href="blogs.html" class="nav-link">Blogs</a></li>
                 </ul>
               </nav>
             </div>
@@ -156,10 +159,9 @@
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal9">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid img_style" src="images/biped.min.png" alt="biped">
+              <img class="img-fluid img_style" src="images/Projects/biped.min.png" alt="biped">
             </a>
             <div class="portfolio-caption">
               <h4>Biped</h4>
@@ -170,10 +172,9 @@
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid img_style" src="images/imitato.min.png" alt="Imitato">
+              <img class="img-fluid img_style" src="images/Projects/imitato.min.png" alt="Imitato">
             </a>
             <div class="portfolio-caption">
               <h4>Imitato</h4>
@@ -184,10 +185,9 @@
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid img_style" src="images/modbot.jpeg" alt="Modular Robots">
+              <img class="img-fluid img_style" src="images/Projects/modbot.jpeg" alt="Modular Robots">
             </a>
             <div class="portfolio-caption">
               <h4>Modular Robots</h4>
@@ -405,12 +405,12 @@
               <div class="col-lg-6 ml-auto">
                 <h2 class="footer-heading mb-4" style="font-weight:bold; font-size: 1.7em;">Reach Out</h2>
                 <ul class="list-unstyled">
-                  <li><a href="tel: 919769037312">+91 9769037312</a></li>
-                  <li><a href="tel: 918696852603">+91 8696852603</a></li>
-                  <li><a href="mailto:sandbox@goa.bits-pilani.ac.in">sandbox.bpgc@gmail.com</a></li>
-                  <li><a href="https://www.facebook.com/SandboxBPGC/">facebook</a></li>
-                  <li><a href="https://www.linkedin.com/company/sandbox-innovation-lab/about/">LinkedIn</a></li>
-                  <li><a href="https://www.instagram.com/sandbox_bitsg/">Instagram</a></li>
+                  <li><i class="fa fa-phone-square" aria-hidden="true" style="font-size: 24px;"></i>
+                    <a href="tel: 919769037312">+91 9769037312</a></li>
+                  <li><i class="fa fa-envelope-square" aria-hidden="true" style="font-size: 24px;"></i><a href="mailto:sandbox@goa.bits-pilani.ac.in">  sandbox.bpgc@gmail.com</a></li>
+                  <li><i class="fa fa-facebook-square" aria-hidden="true" style="font-size: 24px;"></i><a href="https://www.facebook.com/SandboxBPGC/"> Facebook</a></li>
+                  <li><i class="fa fa-linkedin-square" aria-hidden="true" style="font-size: 24px;"></i><a href="https://www.linkedin.com/company/sandbox-innovation-lab/about/"> LinkedIn</a></li>
+                  <li><i class="fa fa-instagram" aria-hidden="true" style="font-size: 24px;"></i><a href="https://www.instagram.com/sandbox_bitsg/"> Instagram</a></li>
                 </ul>
               </div>
               <div class="col-lg-6">
@@ -457,7 +457,7 @@
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">Modular Robot</h2>
                 <p class="item-intro text-muted">Summary</p>
-                <img class="img-fluid d-block mx-auto" style="height: 400px; width: auto;" src="images/modbot.jpeg" alt="">
+                <img class="img-fluid d-block mx-auto" style="height: 400px; width: auto;" src="images/Projects/modbot.jpeg" alt="">
                 <p>The project aims to build reconfigurable robots made up of small modules which may have common or distinct functionality based on the application. 
                   <br>
                   <ul>
@@ -480,122 +480,6 @@
     </div>
   </div>
 
-  <!-- Re-Glove -->
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Re-Glove</h2>
-                <p class="item-intro text-muted">Summary</p>
-                <img class="img-fluid d-block mx-auto" src="images/Reglove.min.jpeg" alt="">
-                <p>Re-Glove is a wearable device being developed in the Sandbox to communicate with computers, devices, robots and artificial environments. It is a foray into the fields of Augmented Reality and Virtual Reality. </p>
-                <br>
-                <ul>
-                  <li>Traditional input devices have limited functionality which does not include the capabilities of interacting with the objects in computer environments. This project aims to solve this problem though the use of physical gestures to control a device using intuitive, natural movements. </li>
-                  <li>The communication can take place both wirelessly and in a wired manner. </li>
-                  <li>The glove potentially offers limitless application as it can be used to drive vehicles, control office and home electronics, media playback, robots in manufacturing lines and ultimately it can even act as an universal controller. </li>
-                  <li>Testers who were engaged with the glove informed that the glove offered more natural and intuitive control than the project had initially aimed. </li>
-                </ul>
-                  <!--<p>
-                    <a target="_blank" href="https://jonandoni.com/">Read More</a>
-                  </p>-->
-                <!--<ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Explore</li>
-                  <li>Category: Graphic Design</li>
-                </ul>-->
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Tab</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- TRAMS -->
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">TRAMS</h2>
-                <p class="item-intro text-muted">Summary</p>
-                <img class="img-fluid d-block mx-auto" src="images/trams.min.jpg" alt="">
-                <p>
-
-                    Environmental friendly goals for mobility solutions can be achieved through several ways - modularity, electric drive-train, reducing development time and downtime. </p>
-                    <br>
-                    <ul>
-                      <li>The product is completely modular, and each component can be swapped/ extended/ removed/ upgraded according to user-requirements. It allows users to change the complete framework (chassis) of the vehicle along with the external functional modules. </li>
-                      <li>The other major technological benefit apart from modularity is electric drive, which has enabled the team to make a simplistic 4-friendly mobility solution. </li>
-                      <li>The targeted customers are a variety of industries and companies (that work in fields incorporating mobility) such as defence establishments, commercial transportation, disabled people mobility, security and research firms. </li>
-                    </ul>
-                <!--<p>
-                  <a target="_blank" href="http://iipdm.haifa.ac.il/index.php/2014-10-01-08-42-51/faculty/7-prof-zohar-eviatar">Read More</a>
-                </p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Finish</li>
-                  <li>Category: Identity</li>
-                </ul>-->
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Tab</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Human Arm Robot -->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Human Arm Robot</h2>
-                <p class="item-intro text-muted">Summary</p>
-                <img class="img-fluid d-block mx-auto" src="images/armbots.min.jpeg" alt="">
-                <p>A Human Arm Robot, as the name suggests, is a robotic module which is structured and shaped like a human arm, equipped with all the fingers, forearms and upper arms and has functional capabilities almos at par with human hands. </p>
-                <br>
-                <ul>
-                  <li>The team, having finished the first phase of manufacturing and controlling of fingers using gestures, is now working on the second and last phase which involves manufacturing and controlling the upper arm and forearms. </li>
-                  <li>The bot has a number of applications in various fields like manufacturing, geographical explorations and defence. It can be used for performing actions that require precision and/or need to be repeated multiple number of times without stopping. </li>
-                  <li>The bot is capable of picking, placing and tilting objects of different shapes and dimensions, transferring liquids from one container to another and can even be expanded to be attached to a rover and conduct operations in remote places which are too dangerous or inaccessible to humans because it is controlled remotely over WiFi. </li>
-                </ul>
-                <!--<p>
-                  <a target="_blank" href="https://www.researchgate.net/profile/Tania_Fernandes">Read More</a>
-                </p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Lines</li>
-                  <li>Category: Branding</li>
-                </ul>-->
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Tab</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- Imitato -->
   <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
@@ -608,7 +492,7 @@
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">Imitato</h2>
                 <p class="item-intro text-muted">Summary</p>
-                <img class="img-fluid d-block mx-auto" src="images/imitato.min.png" alt="">
+                <img class="img-fluid d-block mx-auto" src="images/Projects/imitato.min.png" alt="">
                 <p>Imitato Robotics are building Humanoid Robots which can be controlled by humans wearing an exo-suit. The humanoids designed will mimic the actions of human beings and can use human intelligence to perform tasks in new environments. </p>
                 <br>
                 <ul>
@@ -636,121 +520,6 @@
     </div>
   </div>
 
-  <!-- Incubator -->
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Incubator</h2>
-                <p class="item-intro text-muted">Summary</p>
-                <img class="img-fluid d-block mx-auto" src="images/incubator.min.png" alt="">
-                <p>Incubator is a part of Neonatal Intensive Care Unit (NICU) which specializes in the care of an ill or pre-maturely born baby. The project aims to enhance the medication and treatment facilities in the country by making available affordable and efficient incubators. 
-                  <br>
-                  <ul>
-                    <li>It provides a controlled, closed environment for the baby in an attempt to establish womb- like conditions. Designing a control system that regulates temperature and humidity in the presence of a steady oxygen supply is the primary focus. </li>
-                    <li>Simulation model is being constructed to test the stabilty of the control system after a rigorous study of research papers, existing models and possible additional features. </li>
-                    <li>Target customers are rural and town hospitals that cannot afford imported, expensive incubators. </li>
-                  </ul>
-                </p>
-                <!--<p>
-                  <a target="_blank" href="https://communicationdeall.academia.edu/PrathibhaKaranth">Read More</a>
-                </p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Window</li>
-                  <li>Category: Photography</li>
-                </ul>-->
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Tab</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Tesla Coil -->
-  <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Tesla Coil</h2>
-                <p class="item-intro text-muted">Summary</p>
-                <img class="img-fluid d-block mx-auto" src="images/teslacoil.min.png" alt="">
-                <p>The Tesla Coil project concentrates on making an educational-cum-entertainment device. 
-                  <br>
-                  <ul>
-                    <li>The team has already built and successfully lab-tested a basic slayer exciter circuit, completed the design of a single musical tesla coil and are currently working on the manufacturing of the latter. The last stage includes a larger setup with more power output and more coils to create proper music with vocals and bass. </li>
-                    <li>The generic nature of the product enables the group to target a diverse consumer group which include children who can play with the device; high school students and college students interested in learning existing techniques and technology and innovating upon them and adults who wish to make a hobby out of innovation and application of basic scientific principles. </li>
-                  </ul>
-                </p>
-                <!--<p>
-                  <a target="_blank" href="https://www.sowi.uni-kl.de/psychologie-ii/staff/prof-dr-thomas-lachmann/">Read More</a>
-                </p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Window</li>
-                  <li>Category: Photography</li>
-                </ul>-->
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Tab</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Swarmbot -->
-  <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Swarm Robots</h2>
-                <p class="item-intro text-muted">Summary</p>
-                <img class="img-fluid d-block mx-auto" src="images/swarmbots.min.png" alt="">
-                <p>The aim of the project is to create a sensor network which will assist in gathering data over large areas. It will be used for analyzing pollution levels in Goa and can be modified to measure moisture and soil health levels in fields to optimize the irrigation and pesticide distribution system. 
-                  <br>
-                  <ul>
-                    <li>Robust sensors have the ability to weather time and natural elements. A swarm of drones cover more area in lesser time and can go to remote places. </li>
-                    <li>The unique thing about this network is that it will have a mobile Base station as compared to a stationary one present in existing networks. The mobile base station will save power and help replace dead malfunctioning/dead motes efficiently. </li>
-                    <li>This product is targeted at the common farmer with information at a very reasonable price. </li>
-                  </ul>
-                </p>
-                <!--<p>
-                  <a href="http://marcusmaia.academia.edu/" target="_blank">Read More</a>
-                </p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Window</li>
-                  <li>Category: Photography</li>
-                </ul>-->
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Tab</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- Biped -->
   <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
@@ -763,7 +532,7 @@
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">Biped</h2>
                 <p class="item-intro text-muted">Summary</p>
-                <img class="img-fluid d-block mx-auto" src="images/biped.min.png" alt="">
+                <img class="img-fluid d-block mx-auto" src="images/Projects/biped.min.png" alt="">
                 <p>"Biped Robots" or simply put, "Robotic Human Legs" are robotic modules with high stability and degrees of freedom, being developed for the purpose of traversing places where neither humans nor bots with wheels can go. 
                   <br>
                   <ul>
@@ -775,125 +544,6 @@
                 </p>
                 <!--<p>
                   <a href="http://crcn.ulb.ac.be/members/?q=36" target="_blank">Read More</a>
-                </p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Window</li>
-                  <li>Category: Photography</li>
-                </ul>-->
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Tab</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- handy -->
-  <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Handy</h2>
-                <p class="item-intro text-muted">Summary</p>
-                <img class="img-fluid d-block mx-auto" src="images/handy.min.png" alt="">
-                <p>The project aims to make a two-part wearable electronic gadget encompassed in a belt and wristband. The objective is to equip the visually impaired with basic object detection capabilities ans ease in making phone calls. 
-                  <br>
-                  <ul>
-                    <li>The project plan involves designing the product and equipping it with features like panic buttons, object detection and AI. The team is currently working on the design of the belt sensors. </li>
-                    <li>The product has a specific customer target base - the visually impaired - those with inherent lack of eyesight and those who suffered vision loss later in life. </li>
-                    <li>Catering to both these sets of consumers is precisely why the product employs use of braille sequences as well as different languages speech recognition and English inputs with the help of keys. </li>
-                  </ul>
-                </p>
-                <!--<p>
-                  <a href="http://crcn.ulb.ac.be/members/?q=19" target="_blank">Read More</a>
-                </p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Window</li>
-                  <li>Category: Photography</li>
-                </ul>-->
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Tab</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Solar UAV -->
-  <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Solar UAV</h2>
-                <p class="item-intro text-muted">Summary</p>
-                <img class="img-fluid d-block mx-auto" src="images/solaruav.min.jpeg" alt="">
-                <p>The main aim of the project is to develop a 'Solar Endurance UAV' which will sustain continuous long flights with very few stops for maintenance, which is very difficult to do due to energy and weight constraints. 
-                  <br>
-                  <ul>
-                    <li>The product will maximize its efficiency by utilizing wind updrafts to its advantage, i.e, use soaring. </li>
-                    <li>Geological explorations of earth can be made easier since the product can cover large areas of lands only on wind energy. </li>
-                    <li>The product has a plethora of civil, commercial and military applications. Some of these include mobile surveillance and mapping, weather analysis, aerial photography and videography, rescue missions, pick-up and delivery services over long distances, mineral exploration, meteorological and archaeological research. </li>
-                    <li>The product is currently in pre-testing phase. Tests are being carries out and the optimum design will be be finally used for the UAV. </li>
-                  </ul>
-                </p>
-                <!--<p>
-                  <a href="http://lekhnathpathak.blogspot.com/" target="_blank">Read More</a>
-                </p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Window</li>
-                  <li>Category: Photography</li>
-                </ul>-->
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Tab</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- BIT Secure -->
-  <div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">BIT Secure</h2>
-                <p class="item-intro text-muted">Summary</p>
-                <img class="img-fluid d-block mx-auto" style="height: 400px; width: auto;" src="images/bitsecure.min.jpeg" alt="">
-                <p>BIT Secure is a matchbox-sized handy gadget, which assures the safety and security of personal belongings such as luggage, purses containing valuables and more. 
-                  <br>
-                  <ul>
-                    <li>The tiny device can be attached to luggage, laptops and other costly personal belongings to alert the owner of any unwanted movement with the help of flashing lights, buzzers or an SMS to the owner's smartphone. </li>
-                    <li>It can even be attached to hotel doors if the owner is worried about anyone entering the room with duplicate keys. If an unauthorised person tries to open the door, an alarm will be set off, alerting one to the case of a possible intrusion. </li>
-                    <li>The prototype has already been developed and the team is now working on reducing its size more and making it more energy-efficient. </li>
-                    <li>The ubiquitous nature of the device helps the team to target a very large consumer base, inclusive of but not limited to the tourism and travel industry, security companies, property owners etc. Its main utility lies in the fact that it is cost-effective, convenient to use and that it would alarm the owner about any attempt at theft of belongings or unwanted intrusion in his/her vicinity, enabling him/her to take proper action. </li>
-                  </ul>
-                </p>
-                <!--<p>
-                  <a href="https://ejsafra.haifa.ac.il/people/prof-david-share/" target="_blank">Read More</a>
                 </p>
                 <ul class="list-inline">
                   <li>Date: January 2017</li>
