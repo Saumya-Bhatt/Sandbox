@@ -51,3 +51,9 @@ p.errordiv{color:#E80000;}
 .card-img-top {
     height: 300px;
 }
+.dropdown-menu {
+    background-color:slategray;
+}
+.dropdown-menu a {
+    color: whitesmoke;
+}
